@@ -6,7 +6,7 @@ def deal_card
   return rand(11)+1
 end
 
-def display_card_totaL(N)
+def display_card_total(N)
   puts "Your cards add up to #{N}"
 end
 
@@ -23,7 +23,8 @@ def end_game(card_total)
 end
 
 def initial_round
-  # code #initial_round here
+  sum = deal_card + deal_card
+  display_card_total(sum)
 end
 
 def hit?
