@@ -1,11 +1,9 @@
-p rand(11)
-
 def welcome
   puts "Welcome to the Blackjack Table"
 end
 
 def deal_card
-  return rand(11)
+  return rand(11)+1
 end
 
 def display_card_total
